@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tela_13 — Criar conta</title>
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<div class="screen screen--focus">
+
+  <header class="header">
+    <a class="header__back" href="tela_12.html">&lt;</a>
+    <h1 class="header__title">Criar conta</h1>
+  </header>
+
+  <main class="screen__content">
+
+    <h2 class="screen__title">Cadastre-se</h2>
+    <p class="screen__subtitle">Leva menos de dois minutos.</p>
+
+    <form class="form form--signup">
+
+      <div class="form__group">
+        <label class="form__label" for="nome">Nome completo</label>
+        <input class="form__input" type="text" id="nome" placeholder="Maria da Silva">
+      </div>
+
+      <div class="form__group">
+        <label class="form__label" for="cad-email">E-mail</label>
+        <input class="form__input" type="email" id="cad-email" placeholder="seu@email.com">
+      </div>
+
+      <div class="form__group">
+        <label class="form__label" for="tipo">Tipo de conta</label>
+        <select class="form__select" id="tipo">
+          <option>Quero trabalhar em turnos</option>
+          <option>Quero contratar turnos</option>
+        </select>
+      </div>
+
+      <div class="form__group">
+        <label class="form__label" for="senha">Senha</label>
+        <input class="form__input" type="password" id="senha" placeholder="••••••••">
+        <p class="form__hint">Mínimo de 8 caracteres.</p>
+      </div>
+
+      <div class="form__group">
+        <label class="form__label" for="senha2">Confirmar senha</label>
+        <input class="form__input" type="password" id="senha2" placeholder="••••••••">
+      </div>
+
+      <label class="form__check">
+        <input type="checkbox">
+        Li e concordo com os termos de uso.
+      </label>
+
+      <label class="form__check">
+        <input type="checkbox">
+        Li e concordo com a política de privacidade.
+      </label>
+
+      <!-- as caixas de aceite ainda nao foram marcadas -->
+      <div class="form__actions">
+        <button class="button button--block button--disabled">Criar conta</button>
+      </div>
+
+      <p class="form__footer">
+        Já tem conta?
+        <a class="section__link" href="tela_12.html">Entrar</a>
+      </p>
+
+    </form>
+
+  </main>
+
+  <nav class="nav nav--tabs">
+    <a class="nav__item" href="tela_01.html">Início</a>
+    <a class="nav__item" href="tela_11.html">Buscar</a>
+    <a class="nav__item" href="tela_04.html">Alertas</a>
+    <a class="nav__item nav__item--active" href="tela_13.html">Perfil</a>
+  </nav>
+
+</div>
+
+</body>
+</html>
