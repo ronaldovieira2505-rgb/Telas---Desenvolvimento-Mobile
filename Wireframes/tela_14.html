@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tela_14 — Perfil</title>
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<div class="screen">
+
+  <header class="header">
+    <a class="header__back" href="tela_01.html">&lt;</a>
+    <h1 class="header__title">Meu perfil</h1>
+    <a class="header__action" href="tela_12.html">Sair</a>
+  </header>
+
+  <main class="screen__content">
+
+    <!-- identificacao do usuario -->
+    <article class="card card--horizontal">
+      <div class="card__image">imagem</div>
+      <div class="card__body">
+        <h2 class="card__title">Marina Alves</h2>
+        <p class="card__subtitle">marina@email.com</p>
+        <p class="card__meta">São Paulo, SP · trabalhador</p>
+      </div>
+    </article>
+
+    <!-- dados pessoais -->
+    <section class="section">
+      <div class="section__header">
+        <h2 class="section__title">Dados pessoais</h2>
+      </div>
+      <form class="form">
+        <div class="form__group">
+          <label class="form__label" for="perfil-nome">Nome</label>
+          <input class="form__input" type="text" id="perfil-nome" value="Marina Alves">
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="perfil-cidade">Cidade</label>
+          <input class="form__input" type="text" id="perfil-cidade" value="São Paulo, SP">
+        </div>
+        <div class="form__actions">
+          <button class="button button--primary button--block">Salvar alterações</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- candidaturas do usuario com seus estados -->
+    <section class="section">
+      <div class="section__header">
+        <h2 class="section__title">Minhas candidaturas</h2>
+        <a class="section__link" href="tela_11.html">Buscar turnos</a>
+      </div>
+      <div class="list">
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Ajudante de obra</h3>
+            <p class="list__meta">Construtora Vieira · 12/09</p>
+            <span class="badge badge--approved">confirmada</span>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small button--danger">Cancelar</button>
+          </div>
+        </div>
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Apoio de evento</h3>
+            <p class="list__meta">Produtora Lumen · 15/09</p>
+            <span class="badge badge--pending">em análise</span>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small button--danger">Cancelar</button>
+          </div>
+        </div>
+
+        <!-- candidatura recusada: nao ha acao disponivel -->
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Carga e descarga</h3>
+            <p class="list__meta">Distribuidora Sul · 16/09</p>
+            <span class="badge badge--rejected">recusada</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- avaliacoes escritas pelo usuario -->
+    <section class="section">
+      <div class="section__header">
+        <h2 class="section__title">Minhas avaliações</h2>
+      </div>
+      <div class="list list--comments">
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Ajudante de obra</h3>
+            <p class="list__meta">"Turno pagou no mesmo dia, equipe organizada."</p>
+            <span class="badge badge--pending">em análise</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <nav class="nav nav--tabs">
+    <a class="nav__item" href="tela_01.html">Início</a>
+    <a class="nav__item" href="tela_11.html">Buscar</a>
+    <a class="nav__item" href="tela_04.html">Alertas</a>
+    <a class="nav__item nav__item--active" href="tela_14.html">Perfil</a>
+  </nav>
+
+</div>
+
+</body>
+</html>
