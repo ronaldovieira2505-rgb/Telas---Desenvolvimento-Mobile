@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tela_06 — Contratante: nova vaga</title>
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<div class="screen screen--admin">
+
+  <header class="header header--admin">
+    <a class="header__back" href="tela_01.html">&lt;</a>
+    <h1 class="header__title">Nova vaga</h1>
+    <a class="header__action" href="tela_01.html">Sair</a>
+  </header>
+
+  <main class="screen__content">
+
+    <p class="screen__subtitle">Publique um turno. Vagas de contratantes novos passam por aprovação.</p>
+
+    <form class="form form--admin">
+
+      <div class="form__group">
+        <label class="form__label" for="titulo">Título da vaga</label>
+        <input class="form__input" type="text" id="titulo" placeholder="Ajudante de obra">
+      </div>
+
+      <div class="form__group">
+        <label class="form__label" for="descricao">Descrição do turno</label>
+        <textarea class="form__textarea" id="descricao" placeholder="Atividades, requisitos e equipamentos"></textarea>
+      </div>
+
+      <div class="form__group">
+        <label class="form__label" for="cat">Categoria</label>
+        <select class="form__select" id="cat">
+          <option>Construção</option>
+          <option>Logística</option>
+          <option>Eventos</option>
+          <option>Varejo</option>
+          <option>Limpeza</option>
+        </select>
+      </div>
+
+      <div class="form__row">
+        <div class="form__group">
+          <label class="form__label" for="data">Data</label>
+          <input class="form__input" type="text" id="data" placeholder="12/09">
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="horario">Horário</label>
+          <input class="form__input" type="text" id="horario" placeholder="07h às 17h">
+        </div>
+      </div>
+
+      <div class="form__row">
+        <div class="form__group">
+          <label class="form__label" for="local">Local</label>
+          <input class="form__input" type="text" id="local" placeholder="São Paulo, SP">
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="valor">Valor</label>
+          <input class="form__input" type="text" id="valor" placeholder="R$ 180">
+        </div>
+      </div>
+
+      <div class="form__group">
+        <label class="form__label">Tags</label>
+        <div class="chip-list">
+          <span class="chip chip--tag">diarista</span>
+          <span class="chip chip--tag">urgente</span>
+          <span class="chip chip--tag">sem experiência</span>
+        </div>
+      </div>
+
+      <div class="form__group">
+        <label class="form__label">Imagem de capa</label>
+        <div class="form__upload">imagem</div>
+        <p class="form__hint">Formato recomendado: 1200 x 600.</p>
+      </div>
+
+      <div class="form__actions">
+        <a class="button button--primary button--block" href="tela_09.html">Enviar para revisão</a>
+        <button class="button button--secondary button--block">Salvar rascunho</button>
+      </div>
+
+    </form>
+
+  </main>
+
+</div>
+
+</body>
+</html>

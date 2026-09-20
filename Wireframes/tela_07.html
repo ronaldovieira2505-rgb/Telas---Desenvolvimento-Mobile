@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tela_07 — Admin: destaques</title>
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<div class="screen screen--admin">
+
+  <header class="header header--admin">
+    <a class="header__back" href="tela_05.html">&lt;</a>
+    <h1 class="header__title">Destaques</h1>
+    <a class="header__action" href="tela_01.html">Sair</a>
+  </header>
+
+  <nav class="nav nav--admin">
+    <a class="nav__item" href="tela_05.html">Categorias</a>
+    <a class="nav__item nav__item--active" href="tela_07.html">Destaques</a>
+    <a class="nav__item" href="tela_08.html">Usuários</a>
+    <a class="nav__item" href="tela_09.html">Aprovação</a>
+    <a class="nav__item" href="tela_10.html">Avaliações</a>
+  </nav>
+
+  <main class="screen__content">
+
+    <!-- os itens marcados aqui alimentam a secao -->
+    <!-- "Vagas em destaque" da tela_01           -->
+    <div class="alert alert--cta">
+      <p class="alert__title">Vitrine da tela inicial</p>
+      <p class="alert__text">As vagas marcadas aparecem em destaque na página inicial.</p>
+      <a class="button button--secondary button--small alert__action" href="tela_01.html">Ver na tela inicial</a>
+    </div>
+
+    <section class="section section--grid">
+      <div class="section__body">
+        <div class="stat">
+          <span class="stat__value">4</span>
+          <span class="stat__label">Em destaque</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value">6</span>
+          <span class="stat__label">Espaços livres</span>
+        </div>
+      </div>
+    </section>
+
+    <form class="form form--inline">
+      <input class="form__input" type="text" placeholder="Localizar vaga">
+      <button class="button button--secondary">Buscar</button>
+    </form>
+
+    <section class="section">
+      <div class="section__header">
+        <h2 class="section__title">Vagas disponíveis</h2>
+      </div>
+      <div class="list">
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Fotógrafo de evento</h3>
+            <p class="list__meta">Estúdio Praça · 20/09</p>
+            <span class="badge badge--approved">em destaque</span>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small button--danger">Remover</button>
+          </div>
+        </div>
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Montador de estande</h3>
+            <p class="list__meta">Feira Norte · 22/09</p>
+            <span class="badge badge--approved">em destaque</span>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small button--danger">Remover</button>
+          </div>
+        </div>
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Ajudante de obra</h3>
+            <p class="list__meta">Construtora Vieira · 12/09</p>
+            <span class="badge badge--approved">em destaque</span>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small button--danger">Remover</button>
+          </div>
+        </div>
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Apoio de evento</h3>
+            <p class="list__meta">Produtora Lumen · 15/09</p>
+            <span class="badge badge--approved">em destaque</span>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small button--danger">Remover</button>
+          </div>
+        </div>
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Repositor de loja</h3>
+            <p class="list__meta">Mercado Bom Preço · 14/09</p>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small button--primary">Destacar</button>
+          </div>
+        </div>
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Carga e descarga</h3>
+            <p class="list__meta">Distribuidora Sul · 16/09</p>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small button--primary">Destacar</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+</html>

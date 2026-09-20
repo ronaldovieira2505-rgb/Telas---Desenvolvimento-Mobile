@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tela_08 — Admin: usuários</title>
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<div class="screen screen--admin">
+
+  <header class="header header--admin">
+    <a class="header__back" href="tela_05.html">&lt;</a>
+    <h1 class="header__title">Usuários</h1>
+    <a class="header__action" href="tela_01.html">Sair</a>
+  </header>
+
+  <nav class="nav nav--admin">
+    <a class="nav__item" href="tela_05.html">Categorias</a>
+    <a class="nav__item" href="tela_07.html">Destaques</a>
+    <a class="nav__item nav__item--active" href="tela_08.html">Usuários</a>
+    <a class="nav__item" href="tela_09.html">Aprovação</a>
+    <a class="nav__item" href="tela_10.html">Avaliações</a>
+  </nav>
+
+  <main class="screen__content">
+
+    <section class="section section--grid">
+      <div class="section__body">
+        <div class="stat">
+          <span class="stat__value">318</span>
+          <span class="stat__label">Contas ativas</span>
+        </div>
+        <div class="stat stat--attention">
+          <span class="stat__value">5</span>
+          <span class="stat__label">Contas bloqueadas</span>
+        </div>
+      </div>
+    </section>
+
+    <form class="form form--inline">
+      <input class="form__input" type="text" placeholder="Localizar usuário">
+      <button class="button button--secondary">Buscar</button>
+    </form>
+
+    <section class="section">
+      <div class="section__header">
+        <h2 class="section__title">Contas cadastradas</h2>
+      </div>
+      <div class="list">
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Marina Alves</h3>
+            <p class="list__meta">marina@email.com · trabalhador</p>
+            <span class="badge badge--approved">ativo</span>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small button--danger">Bloquear</button>
+          </div>
+        </div>
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Construtora Vieira</h3>
+            <p class="list__meta">contato@vieira.com · contratante</p>
+            <span class="badge badge--approved">ativo</span>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small button--danger">Bloquear</button>
+          </div>
+        </div>
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Rafael Souza</h3>
+            <p class="list__meta">rafael@email.com · trabalhador</p>
+            <span class="badge badge--rejected">bloqueado</span>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small button--primary">Desbloquear</button>
+          </div>
+        </div>
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Feira Norte</h3>
+            <p class="list__meta">admin@feiranorte.com · contratante</p>
+            <span class="badge badge--pending">em verificação</span>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small button--danger">Bloquear</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+</html>

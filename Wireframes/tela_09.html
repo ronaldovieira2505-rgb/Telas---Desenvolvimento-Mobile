@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tela_09 — Admin: aprovação</title>
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<div class="screen screen--admin">
+
+  <header class="header header--admin">
+    <a class="header__back" href="tela_05.html">&lt;</a>
+    <h1 class="header__title">Fila de aprovação</h1>
+    <a class="header__action" href="tela_01.html">Sair</a>
+  </header>
+
+  <nav class="nav nav--admin">
+    <a class="nav__item" href="tela_05.html">Categorias</a>
+    <a class="nav__item" href="tela_07.html">Destaques</a>
+    <a class="nav__item" href="tela_08.html">Usuários</a>
+    <a class="nav__item nav__item--active" href="tela_09.html">Aprovação</a>
+    <a class="nav__item" href="tela_10.html">Avaliações</a>
+  </nav>
+
+  <main class="screen__content">
+
+    <!-- destino das vagas enviadas pela tela_06 -->
+    <section class="section section--grid">
+      <div class="section__body">
+        <div class="stat stat--attention">
+          <span class="stat__value">7</span>
+          <span class="stat__label">Aguardando revisão</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value">24</span>
+          <span class="stat__label">Aprovadas na semana</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__header">
+        <h2 class="section__title">Vagas enviadas para revisão</h2>
+      </div>
+      <div class="list list--review">
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Ajudante de obra</h3>
+            <p class="list__meta">Construtora Vieira · enviada em 10/09</p>
+            <span class="badge badge--pending">em análise</span>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small button--primary">Aprovar</button>
+            <button class="button button--small button--danger">Reprovar</button>
+          </div>
+        </div>
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Carga e descarga</h3>
+            <p class="list__meta">Distribuidora Sul · enviada em 10/09</p>
+            <span class="badge badge--pending">em análise</span>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small button--primary">Aprovar</button>
+            <button class="button button--small button--danger">Reprovar</button>
+          </div>
+        </div>
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Apoio de evento</h3>
+            <p class="list__meta">Produtora Lumen · enviada em 09/09</p>
+            <span class="badge badge--approved">aprovada</span>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small button--disabled">Aprovar</button>
+            <button class="button button--small button--danger">Reprovar</button>
+          </div>
+        </div>
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Panfletagem</h3>
+            <p class="list__meta">Agência Ponto · enviada em 09/09</p>
+            <span class="badge badge--rejected">reprovada</span>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small">Reabrir</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+</html>

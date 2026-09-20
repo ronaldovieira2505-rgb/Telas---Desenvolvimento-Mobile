@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tela_02 — Categoria</title>
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<div class="screen">
+
+  <!-- cabecalho com retorno e filtro -->
+  <header class="header">
+    <a class="header__back" href="tela_01.html">&lt;</a>
+    <h1 class="header__title">Construção</h1>
+    <span class="header__action">Filtrar</span>
+  </header>
+
+  <main class="screen__content">
+
+    <p class="screen__subtitle">42 turnos encontrados nesta categoria</p>
+
+    <!-- filtros aplicados -->
+    <section class="section">
+      <div class="chip-list">
+        <a class="chip chip--active" href="tela_02.html">Todos</a>
+        <a class="chip" href="tela_02.html">Hoje</a>
+        <a class="chip" href="tela_02.html">Manhã</a>
+        <a class="chip" href="tela_02.html">Noite</a>
+        <a class="chip" href="tela_02.html">Até 5 km</a>
+      </div>
+    </section>
+
+    <!-- listagem de vagas da categoria -->
+    <section class="section">
+      <div class="section__body">
+
+        <article class="card">
+          <div class="card__image">imagem</div>
+          <h3 class="card__title">Ajudante de obra</h3>
+          <p class="card__subtitle">Construtora Vieira</p>
+          <p class="card__meta">São Paulo, SP</p>
+          <p class="card__meta">12/09 · 07h às 17h</p>
+          <p class="card__price">R$ 180</p>
+          <div class="card__actions">
+            <a class="button button--primary button--small" href="tela_12.html">Candidatar-se</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__image">imagem</div>
+          <h3 class="card__title">Servente de pedreiro</h3>
+          <p class="card__subtitle">Construtora Vieira</p>
+          <p class="card__meta">Guarulhos, SP</p>
+          <p class="card__meta">13/09 · 07h às 16h</p>
+          <p class="card__price">R$ 170</p>
+          <div class="card__actions">
+            <a class="button button--primary button--small" href="tela_12.html">Candidatar-se</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__image">imagem</div>
+          <h3 class="card__title">Pintor</h3>
+          <p class="card__subtitle">Construtora Vieira</p>
+          <p class="card__meta">São Paulo, SP</p>
+          <p class="card__meta">18/09 · 08h às 17h</p>
+          <p class="card__price">R$ 190</p>
+          <div class="card__actions">
+            <a class="button button--primary button--small" href="tela_12.html">Candidatar-se</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__image">imagem</div>
+          <h3 class="card__title">Ajudante de elétrica</h3>
+          <p class="card__subtitle">Elétrica Horizonte</p>
+          <p class="card__meta">Osasco, SP</p>
+          <p class="card__meta">19/09 · 07h às 16h</p>
+          <p class="card__price">R$ 210</p>
+          <div class="card__actions">
+            <a class="button button--primary button--small" href="tela_12.html">Candidatar-se</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <button class="button button--secondary button--block">Carregar mais</button>
+
+  </main>
+
+  <nav class="nav nav--tabs">
+    <a class="nav__item nav__item--active" href="tela_01.html">Início</a>
+    <a class="nav__item" href="tela_11.html">Buscar</a>
+    <a class="nav__item" href="tela_04.html">Alertas</a>
+    <a class="nav__item" href="tela_14.html">Perfil</a>
+  </nav>
+
+</div>
+
+</body>
+</html>
