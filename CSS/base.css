@@ -1,0 +1,132 @@
+/* ===================================================== */
+/* base.css                                              */
+/* Reset minimo, bloco .screen (moldura da tela mobile)  */
+/* e bloco .section (agrupador de conteudo).             */
+/* ===================================================== */
+
+/* ---------- reset minimo ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--cor-fundo);
+  font-family: var(--fonte-base);
+  font-size: var(--texto-m);
+  color: var(--cor-texto);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- bloco: screen ---------- */
+/* Representa a area util de uma tela mobile.           */
+
+.screen {
+  max-width: var(--largura-mobile);
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: var(--cor-superficie);
+  border-left: var(--borda);
+  border-right: var(--borda);
+  display: flex;
+  flex-direction: column;
+}
+
+/* elemento: area de conteudo rolavel da tela */
+.screen__content {
+  flex: 1;
+  padding: var(--espaco-4);
+}
+
+/* blocos soltos no conteudo (um card, um aviso, um botao  */
+/* de largura total) mantem o mesmo respiro das secoes      */
+.screen__content > .card,
+.screen__content > .alert,
+.screen__content > .button,
+.screen__content > .form {
+  margin-bottom: var(--espaco-5);
+}
+
+/* elemento: titulo principal da tela */
+.screen__title {
+  margin: 0 0 var(--espaco-2) 0;
+  font-size: var(--texto-gg);
+}
+
+/* elemento: linha de apoio abaixo do titulo */
+.screen__subtitle {
+  margin: 0 0 var(--espaco-4) 0;
+  font-size: var(--texto-p);
+  color: var(--cor-texto-suave);
+}
+
+/* modificador: telas do ambiente administrativo */
+.screen--admin .screen__content {
+  background-color: var(--cor-superficie-alt);
+}
+
+/* modificador: telas de fluxo unico (login, cadastro, alertas) */
+.screen--focus .screen__content {
+  padding-top: var(--espaco-5);
+}
+
+/* ---------- bloco: section ---------- */
+/* Agrupa um conjunto de conteudo dentro da tela.        */
+
+.section {
+  margin-bottom: var(--espaco-5);
+}
+
+/* elemento: cabecalho da secao (titulo + atalho) */
+.section__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: var(--espaco-3);
+}
+
+/* elemento: titulo da secao */
+.section__title {
+  margin: 0;
+  font-size: var(--texto-p);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--cor-texto-suave);
+}
+
+/* elemento: atalho para a tela completa da secao */
+.section__link {
+  font-size: var(--texto-p);
+  color: var(--cor-acao);
+  border-bottom: 1px solid var(--cor-acao);
+}
+
+/* elemento: corpo da secao */
+.section__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-3);
+}
+
+/* modificador: corpo em duas colunas (indicadores) */
+.section--grid .section__body {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* ---------- utilitario de rodape de conteudo ---------- */
+
+.screen__footer-note {
+  margin-top: var(--espaco-5);
+  padding-top: var(--espaco-3);
+  border-top: var(--borda);
+  font-size: var(--texto-p);
+  color: var(--cor-texto-suave);
+  text-align: center;
+}
