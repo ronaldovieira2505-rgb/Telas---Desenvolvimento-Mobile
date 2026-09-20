@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tela_04 — Alertas de vagas</title>
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<div class="screen screen--focus">
+
+  <header class="header">
+    <a class="header__back" href="tela_01.html">&lt;</a>
+    <h1 class="header__title">Alertas de vagas</h1>
+  </header>
+
+  <main class="screen__content">
+
+    <h2 class="screen__title">Receba os turnos primeiro</h2>
+    <p class="screen__subtitle">
+      Enviamos um aviso sempre que uma vaga da sua categoria for publicada.
+    </p>
+
+    <!-- formulario curto de assinatura -->
+    <form class="form form--alerts">
+
+      <div class="form__group">
+        <label class="form__label" for="email">E-mail</label>
+        <input class="form__input" type="email" id="email" placeholder="seu@email.com">
+      </div>
+
+      <div class="form__group">
+        <label class="form__label" for="categoria">Categoria de interesse</label>
+        <select class="form__select" id="categoria">
+          <option>Construção</option>
+          <option>Logística</option>
+          <option>Eventos</option>
+          <option>Varejo</option>
+          <option>Limpeza</option>
+        </select>
+      </div>
+
+      <div class="form__group">
+        <label class="form__label" for="cidade">Cidade</label>
+        <input class="form__input" type="text" id="cidade" placeholder="São Paulo, SP">
+      </div>
+
+      <label class="form__check">
+        <input type="checkbox">
+        Concordo em receber comunicações sobre novos turnos.
+      </label>
+
+      <div class="form__actions">
+        <a class="button button--primary button--block" href="tela_01.html">Assinar alertas</a>
+        <a class="button button--secondary button--block" href="tela_01.html">Agora não</a>
+      </div>
+
+      <p class="form__footer">Você pode cancelar a qualquer momento no perfil.</p>
+
+    </form>
+
+  </main>
+
+  <nav class="nav nav--tabs">
+    <a class="nav__item" href="tela_01.html">Início</a>
+    <a class="nav__item" href="tela_11.html">Buscar</a>
+    <a class="nav__item nav__item--active" href="tela_04.html">Alertas</a>
+    <a class="nav__item" href="tela_14.html">Perfil</a>
+  </nav>
+
+</div>
+
+</body>
+</html>

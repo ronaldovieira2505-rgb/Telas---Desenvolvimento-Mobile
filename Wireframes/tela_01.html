@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tela_01 — Início</title>
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<div class="screen">
+
+  <!-- cabecalho -->
+  <header class="header">
+    <span class="header__logo">LOGO</span>
+    <a class="header__search" href="tela_11.html">Buscar vaga</a>
+    <a class="header__action" href="tela_12.html">Entrar</a>
+  </header>
+
+  <main class="screen__content">
+
+    <h1 class="screen__title">Turnos perto de você</h1>
+    <p class="screen__subtitle">São Paulo, SP — 128 vagas abertas hoje</p>
+
+    <!-- categorias populares -->
+    <section class="section">
+      <div class="section__header">
+        <h2 class="section__title">Categorias populares</h2>
+        <a class="section__link" href="tela_02.html">Ver todas</a>
+      </div>
+      <div class="chip-list">
+        <a class="chip chip--active" href="tela_02.html">Construção</a>
+        <a class="chip" href="tela_02.html">Logística</a>
+        <a class="chip" href="tela_02.html">Eventos</a>
+        <a class="chip" href="tela_02.html">Varejo</a>
+        <a class="chip" href="tela_02.html">Limpeza</a>
+      </div>
+    </section>
+
+    <!-- vagas em destaque: as mesmas selecionadas na tela_07 -->
+    <section class="section">
+      <div class="section__header">
+        <h2 class="section__title">Vagas em destaque</h2>
+        <a class="section__link" href="tela_03.html">Destaques</a>
+      </div>
+      <div class="section__body">
+
+        <article class="card card--featured">
+          <div class="card__image">imagem</div>
+          <h3 class="card__title">Fotógrafo de evento</h3>
+          <p class="card__subtitle">Estúdio Praça</p>
+          <p class="card__meta">São Paulo, SP</p>
+          <p class="card__meta">20/09 · 19h às 23h</p>
+          <p class="card__price">R$ 450</p>
+          <div class="card__actions">
+            <a class="button button--primary button--small" href="tela_12.html">Candidatar-se</a>
+          </div>
+        </article>
+
+        <article class="card card--featured">
+          <div class="card__image">imagem</div>
+          <h3 class="card__title">Montador de estande</h3>
+          <p class="card__subtitle">Feira Norte</p>
+          <p class="card__meta">São Paulo, SP</p>
+          <p class="card__meta">22/09 · 06h às 14h</p>
+          <p class="card__price">R$ 200</p>
+          <div class="card__actions">
+            <a class="button button--primary button--small" href="tela_12.html">Candidatar-se</a>
+          </div>
+        </article>
+
+        <article class="card card--featured">
+          <div class="card__image">imagem</div>
+          <h3 class="card__title">Ajudante de obra</h3>
+          <p class="card__subtitle">Construtora Vieira</p>
+          <p class="card__meta">São Paulo, SP</p>
+          <p class="card__meta">12/09 · 07h às 17h</p>
+          <p class="card__price">R$ 180</p>
+          <div class="card__actions">
+            <a class="button button--primary button--small" href="tela_12.html">Candidatar-se</a>
+          </div>
+        </article>
+
+        <article class="card card--featured">
+          <div class="card__image">imagem</div>
+          <h3 class="card__title">Apoio de evento</h3>
+          <p class="card__subtitle">Produtora Lumen</p>
+          <p class="card__meta">São Paulo, SP</p>
+          <p class="card__meta">15/09 · 18h às 23h</p>
+          <p class="card__price">R$ 160</p>
+          <div class="card__actions">
+            <a class="button button--primary button--small" href="tela_12.html">Candidatar-se</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- contratantes verificados pela equipe -->
+    <section class="section">
+      <div class="section__header">
+        <h2 class="section__title">Contratantes verificados</h2>
+        <a class="section__link" href="tela_03.html">Ver mais</a>
+      </div>
+      <div class="section__body">
+
+        <article class="card card--horizontal">
+          <div class="card__image">imagem</div>
+          <div class="card__body">
+            <h3 class="card__title">Distribuidora Sul</h3>
+            <p class="card__subtitle">Contratante verificado</p>
+            <p class="card__meta">14 turnos publicados este mês</p>
+          </div>
+        </article>
+
+        <article class="card card--horizontal">
+          <div class="card__image">imagem</div>
+          <div class="card__body">
+            <h3 class="card__title">Feira Norte</h3>
+            <p class="card__subtitle">Contratante verificado</p>
+            <p class="card__meta">9 turnos publicados este mês</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- chamada para assinatura de alertas -->
+    <div class="alert alert--cta">
+      <p class="alert__title">Receba alertas de turnos</p>
+      <p class="alert__text">Avisamos quando surgir uma vaga na sua categoria.</p>
+      <a class="button button--secondary button--small alert__action" href="tela_04.html">Assinar alertas</a>
+    </div>
+
+    <p class="screen__footer-note">
+      Acesso administrativo: <a class="section__link" href="tela_05.html">painel</a>
+      <br>
+      É contratante? <a class="section__link" href="tela_06.html">Publicar vaga</a>
+    </p>
+
+  </main>
+
+  <!-- navegacao principal -->
+  <nav class="nav nav--tabs">
+    <a class="nav__item nav__item--active" href="tela_01.html">Início</a>
+    <a class="nav__item" href="tela_11.html">Buscar</a>
+    <a class="nav__item" href="tela_04.html">Alertas</a>
+    <a class="nav__item" href="tela_14.html">Perfil</a>
+  </nav>
+
+</div>
+
+</body>
+</html>
