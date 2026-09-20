@@ -1,0 +1,102 @@
+/* ===================================================== */
+/* card.css                                              */
+/* Bloco .card usado para representar uma vaga, um       */
+/* contratante ou um resultado de busca.                 */
+/* ===================================================== */
+
+/* ---------- bloco: card ---------- */
+
+.card {
+  border: var(--borda);
+  border-radius: var(--raio);
+  background-color: var(--cor-superficie);
+  padding: var(--espaco-3);
+}
+
+/* ---------- elementos ---------- */
+
+/* area reservada a imagem (baixa fidelidade) */
+.card__image {
+  height: 96px;
+  margin-bottom: var(--espaco-3);
+  background-color: var(--cor-placeholder);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--texto-p);
+  color: var(--cor-placeholder-texto);
+}
+
+/* titulo da vaga */
+.card__title {
+  margin: 0 0 var(--espaco-1) 0;
+  font-size: var(--texto-g);
+}
+
+/* nome do contratante */
+.card__subtitle {
+  margin: 0 0 var(--espaco-2) 0;
+  font-size: var(--texto-p);
+  color: var(--cor-texto-suave);
+}
+
+/* linha de apoio: local, data e horario */
+.card__meta {
+  margin: 0 0 var(--espaco-1) 0;
+  font-size: var(--texto-p);
+  color: var(--cor-texto-suave);
+}
+
+/* valor do turno */
+.card__price {
+  margin: var(--espaco-2) 0 0 0;
+  font-size: var(--texto-g);
+  font-weight: bold;
+}
+
+/* rodape com as acoes do card */
+.card__actions {
+  display: flex;
+  gap: var(--espaco-2);
+  margin-top: var(--espaco-3);
+}
+
+/* ---------- modificadores ---------- */
+
+/* card de destaque: borda reforcada e faixa superior */
+.card--featured {
+  border-color: var(--cor-acao);
+  border-top: 3px solid var(--cor-acao);
+}
+
+/* card compacto: sem imagem, usado em listas densas */
+.card--compact {
+  padding: var(--espaco-2) var(--espaco-3);
+}
+
+.card--compact .card__image {
+  display: none;
+}
+
+.card--compact .card__title {
+  font-size: var(--texto-m);
+}
+
+/* card horizontal: imagem menor a esquerda do conteudo */
+.card--horizontal {
+  display: flex;
+  gap: var(--espaco-3);
+}
+
+.card--horizontal .card__image {
+  width: 72px;
+  height: 72px;
+  flex: 0 0 72px;
+  margin-bottom: 0;
+}
+
+.card--horizontal .card__body {
+  flex: 1;
+}
