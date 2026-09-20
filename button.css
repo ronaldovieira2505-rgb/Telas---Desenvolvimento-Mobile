@@ -1,0 +1,75 @@
+/* ===================================================== */
+/* button.css                                            */
+/* Bloco .button e suas variacoes.                       */
+/* Mesma base visual para <a> e <button>.                */
+/* ===================================================== */
+
+/* ---------- bloco: button ---------- */
+
+.button {
+  display: inline-block;
+  padding: var(--espaco-2) var(--espaco-4);
+  border: 1px solid var(--cor-borda-forte);
+  border-radius: var(--raio);
+  background-color: var(--cor-superficie);
+  font-family: var(--fonte-base);
+  font-size: var(--texto-m);
+  color: var(--cor-texto);
+  text-align: center;
+  cursor: pointer;
+}
+
+/* ---------- modificadores ---------- */
+
+/* acao principal da tela */
+.button--primary {
+  background-color: var(--cor-acao);
+  border-color: var(--cor-acao);
+  color: var(--cor-acao-texto);
+}
+
+/* acao secundaria / alternativa */
+.button--secondary {
+  background-color: var(--cor-superficie);
+  border-color: var(--cor-acao);
+  color: var(--cor-acao);
+}
+
+/* acao indisponivel no estado atual da tela */
+.button--disabled {
+  background-color: var(--cor-superficie-alt);
+  border-color: var(--cor-borda);
+  color: var(--cor-texto-suave);
+  cursor: default;
+}
+
+/* acao destrutiva: excluir, remover, bloquear,   */
+/* reprovar, cancelar                             */
+.button--danger {
+  background-color: var(--cor-superficie);
+  border-color: var(--cor-perigo);
+  color: var(--cor-perigo);
+}
+
+/* ocupa toda a largura disponivel */
+.button--block {
+  display: block;
+  width: 100%;
+}
+
+/* versao reduzida usada dentro de listas e cards */
+.button--small {
+  padding: var(--espaco-1) var(--espaco-2);
+  font-size: var(--texto-p);
+}
+
+/* ---------- elemento: grupo de botoes ---------- */
+
+.button-group {
+  display: flex;
+  gap: var(--espaco-2);
+}
+
+.button-group--stacked {
+  flex-direction: column;
+}
