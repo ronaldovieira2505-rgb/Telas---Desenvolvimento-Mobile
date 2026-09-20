@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tela_10 — Admin: avaliações</title>
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<div class="screen screen--admin">
+
+  <header class="header header--admin">
+    <a class="header__back" href="tela_05.html">&lt;</a>
+    <h1 class="header__title">Avaliações</h1>
+    <a class="header__action" href="tela_01.html">Sair</a>
+  </header>
+
+  <nav class="nav nav--admin">
+    <a class="nav__item" href="tela_05.html">Categorias</a>
+    <a class="nav__item" href="tela_07.html">Destaques</a>
+    <a class="nav__item" href="tela_08.html">Usuários</a>
+    <a class="nav__item" href="tela_09.html">Aprovação</a>
+    <a class="nav__item nav__item--active" href="tela_10.html">Avaliações</a>
+  </nav>
+
+  <main class="screen__content">
+
+    <p class="screen__subtitle">
+      Avaliações de turnos aguardando moderação antes de aparecerem na aplicação.
+    </p>
+
+    <section class="section section--grid">
+      <div class="section__body">
+        <div class="stat stat--attention">
+          <span class="stat__value">11</span>
+          <span class="stat__label">Aguardando moderação</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value">92</span>
+          <span class="stat__label">Publicadas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- mesma logica de aprovacao da tela_09, aplicada a avaliacoes -->
+    <section class="section">
+      <div class="section__header">
+        <h2 class="section__title">Fila de moderação</h2>
+      </div>
+      <div class="list list--comments">
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Marina Alves</h3>
+            <p class="list__meta">sobre "Ajudante de obra" · 12/09</p>
+            <p class="list__meta">"Turno pagou no mesmo dia, equipe organizada."</p>
+            <span class="badge badge--pending">em análise</span>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small button--primary">Aprovar</button>
+            <button class="button button--small button--danger">Reprovar</button>
+          </div>
+        </div>
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Rafael Souza</h3>
+            <p class="list__meta">sobre "Carga e descarga" · 11/09</p>
+            <p class="list__meta">"Local diferente do combinado no anúncio."</p>
+            <span class="badge badge--pending">em análise</span>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small button--primary">Aprovar</button>
+            <button class="button button--small button--danger">Reprovar</button>
+          </div>
+        </div>
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Joana Lima</h3>
+            <p class="list__meta">sobre "Apoio de evento" · 10/09</p>
+            <p class="list__meta">"Recomendo, horário respeitado."</p>
+            <span class="badge badge--approved">publicada</span>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small button--disabled">Aprovar</button>
+            <button class="button button--small button--danger">Remover</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+</html>

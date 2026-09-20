@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tela_05 — Admin: categorias</title>
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<div class="screen screen--admin">
+
+  <header class="header header--admin">
+    <a class="header__back" href="tela_01.html">&lt;</a>
+    <h1 class="header__title">Categorias</h1>
+    <a class="header__action" href="tela_01.html">Sair</a>
+  </header>
+
+  <!-- navegacao administrativa: menu lateral do desktop      -->
+  <!-- reorganizado em linhas, para que a aba ativa apareca   -->
+  <nav class="nav nav--admin">
+    <a class="nav__item nav__item--active" href="tela_05.html">Categorias</a>
+    <a class="nav__item" href="tela_07.html">Destaques</a>
+    <a class="nav__item" href="tela_08.html">Usuários</a>
+    <a class="nav__item" href="tela_09.html">Aprovação</a>
+    <a class="nav__item" href="tela_10.html">Avaliações</a>
+  </nav>
+
+  <main class="screen__content">
+
+    <!-- indicadores gerais do ambiente administrativo -->
+    <section class="section section--grid">
+      <div class="section__body">
+        <div class="stat">
+          <span class="stat__value">12</span>
+          <span class="stat__label">Categorias ativas</span>
+        </div>
+        <div class="stat stat--attention">
+          <span class="stat__value">3</span>
+          <span class="stat__label">Sem vagas abertas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- busca administrativa -->
+    <form class="form form--inline">
+      <input class="form__input" type="text" placeholder="Localizar categoria">
+      <button class="button button--secondary">Buscar</button>
+    </form>
+
+    <button class="button button--primary button--block">Nova categoria</button>
+
+    <section class="section">
+      <div class="section__header">
+        <h2 class="section__title">Categorias cadastradas</h2>
+      </div>
+      <!-- categoria com vagas abertas nao pode ser excluida -->
+      <div class="list list--compact">
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Construção</h3>
+            <p class="list__meta">42 vagas abertas</p>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small">Editar</button>
+            <button class="button button--small button--disabled">Excluir</button>
+          </div>
+        </div>
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Logística</h3>
+            <p class="list__meta">28 vagas abertas</p>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small">Editar</button>
+            <button class="button button--small button--disabled">Excluir</button>
+          </div>
+        </div>
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Eventos</h3>
+            <p class="list__meta">19 vagas abertas</p>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small">Editar</button>
+            <button class="button button--small button--disabled">Excluir</button>
+          </div>
+        </div>
+
+        <div class="list__item">
+          <div class="list__info">
+            <h3 class="list__title">Limpeza</h3>
+            <p class="list__meta">Nenhuma vaga aberta</p>
+          </div>
+          <div class="list__actions">
+            <button class="button button--small">Editar</button>
+            <button class="button button--small button--danger">Excluir</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+</html>
