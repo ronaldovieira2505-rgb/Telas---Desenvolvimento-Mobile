@@ -1,0 +1,76 @@
+/* ===================================================== */
+/* list.css                                              */
+/* Bloco .list: listagem de registros usada nas telas    */
+/* administrativas e nos conteudos do perfil.            */
+/* Substitui, no mobile, as tabelas do layout desktop.   */
+/* ===================================================== */
+
+/* ---------- bloco: list ---------- */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-2);
+}
+
+/* ---------- elementos ---------- */
+
+/* registro da listagem */
+.list__item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--espaco-3);
+  padding: var(--espaco-3);
+  border: var(--borda);
+  border-radius: var(--raio);
+  background-color: var(--cor-superficie);
+}
+
+/* bloco de informacao do registro */
+.list__info {
+  flex: 1;
+}
+
+/* titulo do registro */
+.list__title {
+  margin: 0 0 var(--espaco-1) 0;
+  font-size: var(--texto-m);
+}
+
+/* linha de apoio do registro */
+.list__meta {
+  margin: 0;
+  font-size: var(--texto-p);
+  color: var(--cor-texto-suave);
+}
+
+/* acoes do registro, sempre lado a lado */
+.list__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--espaco-1);
+}
+
+/* ---------- modificadores ---------- */
+
+/* listagem de revisao: acoes de aprovar / reprovar */
+.list--review .list__item {
+  align-items: center;
+}
+
+/* listagem simples de categorias */
+.list--compact .list__item {
+  padding: var(--espaco-2) var(--espaco-3);
+}
+
+/* listagem de comentarios: texto ocupa a linha inteira */
+.list--comments .list__item {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.list--comments .list__actions {
+  margin-top: var(--espaco-2);
+}

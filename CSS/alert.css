@@ -1,0 +1,41 @@
+/* ===================================================== */
+/* alert.css                                             */
+/* Bloco .alert: mensagens e chamadas de acao exibidas   */
+/* dentro do conteudo das telas.                         */
+/* ===================================================== */
+
+/* ---------- bloco: alert ---------- */
+
+.alert {
+  padding: var(--espaco-3);
+  border: var(--borda);
+  border-left: 3px solid var(--cor-borda-forte);
+  border-radius: var(--raio);
+  background-color: var(--cor-superficie-alt);
+  font-size: var(--texto-p);
+  color: var(--cor-texto-suave);
+}
+
+/* ---------- elementos ---------- */
+
+.alert__title {
+  margin: 0 0 var(--espaco-1) 0;
+  font-size: var(--texto-m);
+  color: var(--cor-texto);
+}
+
+.alert__text {
+  margin: 0;
+}
+
+.alert__action {
+  display: inline-block;
+  margin-top: var(--espaco-2);
+}
+
+/* ---------- modificadores ---------- */
+
+/* chamada de acao (assinar alertas, vitrine do painel) */
+.alert--cta {
+  border-left-color: var(--cor-acao);
+}

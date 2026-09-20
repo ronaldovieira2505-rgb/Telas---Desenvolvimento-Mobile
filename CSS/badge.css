@@ -1,0 +1,47 @@
+/* ===================================================== */
+/* badge.css                                             */
+/* Bloco .badge: indica o estado de um registro.         */
+/* Sao apenas tres estados em toda a aplicacao, com o    */
+/* mesmo estilo em todas as telas.                       */
+/* ===================================================== */
+
+/* ---------- bloco: badge ---------- */
+
+.badge {
+  display: inline-block;
+  padding: 2px var(--espaco-2);
+  border: 1px solid var(--cor-borda-forte);
+  border-radius: var(--raio);
+  background-color: var(--cor-superficie);
+  font-size: var(--texto-p);
+  color: var(--cor-texto-suave);
+  white-space: nowrap;
+}
+
+/* ---------- modificadores ---------- */
+
+/* pendente — fundo cinza                               */
+/* usos: em analise, em verificacao                     */
+.badge--pending {
+  background-color: var(--cor-placeholder);
+  border-color: var(--cor-borda-forte);
+  color: var(--cor-texto);
+}
+
+/* aprovado — fundo escuro, texto branco                */
+/* usos: ativo, aprovada, publicada, confirmada,        */
+/* em destaque                                          */
+.badge--approved {
+  background-color: var(--cor-acao);
+  border-color: var(--cor-acao);
+  color: var(--cor-acao-texto);
+}
+
+/* recusado — contorno e texto riscado                  */
+/* usos: bloqueado, reprovada, recusada                 */
+.badge--rejected {
+  background-color: var(--cor-superficie);
+  border-color: var(--cor-texto);
+  color: var(--cor-texto);
+  text-decoration: line-through;
+}

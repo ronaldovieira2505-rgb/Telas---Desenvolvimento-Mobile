@@ -1,0 +1,43 @@
+/* ===================================================== */
+/* stat.css                                              */
+/* Bloco .stat: indicador numerico das telas             */
+/* administrativas (total de vagas, pendencias, etc).    */
+/* ===================================================== */
+
+/* ---------- bloco: stat ---------- */
+
+.stat {
+  flex: 1 1 calc(50% - var(--espaco-3));
+  padding: var(--espaco-3);
+  border: var(--borda);
+  border-radius: var(--raio);
+  background-color: var(--cor-superficie);
+}
+
+/* ---------- elementos ---------- */
+
+/* valor do indicador */
+.stat__value {
+  display: block;
+  font-size: var(--texto-gg);
+  font-weight: bold;
+}
+
+/* descricao do indicador */
+.stat__label {
+  display: block;
+  margin-top: var(--espaco-1);
+  font-size: var(--texto-p);
+  color: var(--cor-texto-suave);
+}
+
+/* ---------- modificadores ---------- */
+
+/* indicador que exige atencao (fila com pendencias) */
+.stat--attention {
+  border-color: var(--cor-acao);
+}
+
+.stat--attention .stat__value {
+  color: var(--cor-acao);
+}
