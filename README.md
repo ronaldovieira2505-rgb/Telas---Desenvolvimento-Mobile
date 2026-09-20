@@ -24,22 +24,22 @@ O app tem três tipos de usuário:
 
 Usamos as 14 telas do exemplo do professor como base e adaptamos ao nosso tema: os posts viraram vagas, a newsletter virou alertas de vagas e os comentários viraram avaliações dos turnos.
 
-| Nº | Tela | O que tem |
+| Nº | Tela | O que tem | Arquivo |
 |---|---|---|---|
-| 01 | Início | Busca, categorias, vagas em destaque, contratantes verificados, convite para os alertas |
-| 02 | Vagas por categoria | Filtros, cards de vagas, botão "Carregar mais" |
-| 03 | Destaques | Cards das vagas em destaque |
-| 04 | Alertas de vagas | E-mail, categoria, cidade, aceite, botão "Assinar alertas" |
-| 05 | Admin: Categorias | Indicadores, busca, lista de categorias com Editar e Excluir |
-| 06 | Contratante: Nova vaga | Formulário da vaga, "Enviar para revisão" e "Salvar rascunho" |
-| 07 | Admin: Destaques | Lista de vagas com Destacar e Remover |
-| 08 | Admin: Usuários | Lista de contas com status e Bloquear/Desbloquear |
-| 09 | Admin: Aprovação | Vagas enviadas para revisão com Aprovar e Reprovar |
-| 10 | Admin: Avaliações | Avaliações dos turnos com Aprovar e Reprovar |
-| 11 | Resultados da busca | Ordenação e cards compactos das vagas encontradas |
-| 12 | Entrar | E-mail, senha, "Entrar", "Entrar com Google", link para criar conta |
-| 13 | Criar conta | Nome, e-mail, tipo de conta, senha, confirmação, aceite dos termos |
-| 14 | Perfil | Dados pessoais, minhas candidaturas com status, minhas avaliações |
+| 01 | Início | Busca, categorias, vagas em destaque, contratantes verificados, convite para os alertas | [ver](wireframes/tela_01.png) |
+| 02 | Vagas por categoria | Filtros, cards de vagas, botão "Carregar mais" | [ver](wireframes/tela_02.png) |
+| 03 | Destaques | Cards das vagas em destaque | [ver](wireframes/tela_03.png) |
+| 04 | Alertas de vagas | E-mail, categoria, cidade, aceite, botão "Assinar alertas" | [ver](wireframes/tela_04.png) |
+| 05 | Admin: Categorias | Indicadores, busca, lista de categorias com Editar e Excluir | [ver](wireframes/tela_05.png) |
+| 06 | Contratante: Nova vaga | Formulário da vaga, "Enviar para revisão" e "Salvar rascunho" | [ver](wireframes/tela_06.png) |
+| 07 | Admin: Destaques | Lista de vagas com Destacar e Remover | [ver](wireframes/tela_07.png) |
+| 08 | Admin: Usuários | Lista de contas com status e Bloquear/Desbloquear | [ver](wireframes/tela_08.png) |
+| 09 | Admin: Aprovação | Vagas enviadas para revisão com Aprovar e Reprovar | [ver](wireframes/tela_09.png) |
+| 10 | Admin: Avaliações | Avaliações dos turnos com Aprovar e Reprovar | [ver](wireframes/tela_10.png) |
+| 11 | Resultados da busca | Ordenação e cards compactos das vagas encontradas | [ver](wireframes/tela_11.png) |
+| 12 | Entrar | E-mail, senha, "Entrar", "Entrar com Google", link para criar conta | [ver](wireframes/tela_12.png) |
+| 13 | Criar conta | Nome, e-mail, tipo de conta, senha, confirmação, aceite dos termos | [ver](wireframes/tela_13.png) |
+| 14 | Perfil | Dados pessoais, minhas candidaturas com status, minhas avaliações | [ver](wireframes/tela_14.png) |
 
 ## Fluxos
 
