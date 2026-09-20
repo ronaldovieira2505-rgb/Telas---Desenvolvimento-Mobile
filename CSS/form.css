@@ -1,0 +1,154 @@
+/* ===================================================== */
+/* form.css                                              */
+/* Bloco .form e seus elementos de entrada de dados.     */
+/* ===================================================== */
+
+/* ---------- bloco: form ---------- */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-4);
+}
+
+/* ---------- elementos ---------- */
+
+/* agrupa rotulo + campo + apoio */
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-1);
+}
+
+/* rotulo do campo */
+.form__label {
+  font-size: var(--texto-p);
+  color: var(--cor-texto-suave);
+}
+
+/* campo de texto de uma linha */
+.form__input {
+  width: 100%;
+  min-width: 0;
+  height: 40px;
+  padding: 0 var(--espaco-3);
+  border: 1px solid var(--cor-borda-forte);
+  border-radius: var(--raio);
+  background-color: var(--cor-superficie);
+  font-family: var(--fonte-base);
+  font-size: var(--texto-m);
+  color: var(--cor-texto);
+}
+
+/* campo de texto de multiplas linhas */
+.form__textarea {
+  min-height: 110px;
+  padding: var(--espaco-3);
+  border: 1px solid var(--cor-borda-forte);
+  border-radius: var(--raio);
+  background-color: var(--cor-superficie);
+  font-family: var(--fonte-base);
+  font-size: var(--texto-m);
+  resize: vertical;
+}
+
+/* campo de selecao */
+.form__select {
+  width: 100%;
+  min-width: 0;
+  height: 40px;
+  padding: 0 var(--espaco-2);
+  border: 1px solid var(--cor-borda-forte);
+  border-radius: var(--raio);
+  background-color: var(--cor-superficie);
+  font-family: var(--fonte-base);
+  font-size: var(--texto-m);
+}
+
+/* linha de concordancia com termos */
+.form__check {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--espaco-2);
+  font-size: var(--texto-p);
+  color: var(--cor-texto-suave);
+}
+
+/* texto de apoio abaixo do campo */
+.form__hint {
+  font-size: var(--texto-p);
+  color: var(--cor-texto-suave);
+}
+
+/* area reservada ao envio de imagem (baixa fidelidade) */
+.form__upload {
+  height: 88px;
+  border: 1px dashed var(--cor-borda-forte);
+  border-radius: var(--raio);
+  background-color: var(--cor-superficie-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--texto-p);
+  color: var(--cor-texto-suave);
+}
+
+/* rodape com as acoes do formulario */
+.form__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-2);
+  margin-top: var(--espaco-2);
+}
+
+/* linha de apoio final (link alternativo) */
+.form__footer {
+  text-align: center;
+  font-size: var(--texto-p);
+  color: var(--cor-texto-suave);
+}
+
+/* dois campos lado a lado. O min-width impede que a largura */
+/* propria do input empurre o segundo campo para fora da tela */
+.form__row {
+  display: flex;
+  gap: var(--espaco-2);
+}
+
+.form__row .form__group {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* ---------- modificadores ---------- */
+
+/* formulario de autenticacao: campos mais espacados */
+.form--login {
+  gap: var(--espaco-4);
+}
+
+/* formulario de cadastro */
+.form--signup {
+  gap: var(--espaco-3);
+}
+
+/* formulario curto de assinatura de alertas */
+.form--alerts {
+  gap: var(--espaco-3);
+}
+
+/* formulario administrativo, com muitos campos */
+.form--admin {
+  gap: var(--espaco-3);
+}
+
+/* busca em linha usada nas telas administrativas */
+.form--inline {
+  flex-direction: row;
+  gap: var(--espaco-2);
+  margin-bottom: var(--espaco-4);
+}
+
+.form--inline .form__input {
+  flex: 1;
+}

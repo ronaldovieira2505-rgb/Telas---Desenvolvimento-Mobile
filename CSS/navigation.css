@@ -1,0 +1,181 @@
+/* ===================================================== */
+/* navigation.css                                        */
+/* Blocos de navegacao: .header (cabecalho fixo),        */
+/* .nav (barra de abas e navegacao administrativa)       */
+/* e .chip (atalho de categoria).                        */
+/* ===================================================== */
+
+/* ---------- bloco: header ---------- */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-2);
+  padding: var(--espaco-3) var(--espaco-4);
+  background-color: var(--cor-superficie);
+  border-bottom: var(--borda);
+}
+
+/* elemento: caixa da marca */
+.header__logo {
+  padding: var(--espaco-1) var(--espaco-2);
+  border: 1px solid var(--cor-borda-forte);
+  border-radius: var(--raio);
+  font-size: var(--texto-p);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* elemento: titulo da tela quando nao ha marca */
+.header__title {
+  flex: 1;
+  margin: 0;
+  font-size: var(--texto-g);
+}
+
+/* elemento: botao de voltar */
+.header__back {
+  width: 28px;
+  height: 28px;
+  line-height: 26px;
+  text-align: center;
+  border: 1px solid var(--cor-borda-forte);
+  border-radius: var(--raio);
+  font-size: var(--texto-m);
+}
+
+/* elemento: campo de busca do cabecalho */
+.header__search {
+  flex: 1;
+  height: 32px;
+  padding: 0 var(--espaco-2);
+  border: 1px solid var(--cor-borda-forte);
+  border-radius: var(--raio);
+  background-color: var(--cor-superficie-alt);
+  font-family: var(--fonte-base);
+  font-size: var(--texto-p);
+  color: var(--cor-texto-suave);
+  display: flex;
+  align-items: center;
+}
+
+/* elemento: acao secundaria do cabecalho (filtrar, entrar, sair) */
+.header__action {
+  padding: var(--espaco-1) var(--espaco-2);
+  border: 1px solid var(--cor-borda-forte);
+  border-radius: var(--raio);
+  font-size: var(--texto-p);
+  white-space: nowrap;
+}
+
+/* modificador: cabecalho do ambiente administrativo */
+.header--admin {
+  background-color: var(--cor-acao);
+  border-bottom-color: var(--cor-acao);
+  color: var(--cor-acao-texto);
+}
+
+.header--admin .header__back,
+.header--admin .header__action {
+  border-color: var(--cor-acao-texto);
+}
+
+/* ---------- bloco: nav ---------- */
+
+.nav {
+  display: flex;
+}
+
+/* elemento: item de navegacao */
+.nav__item {
+  flex: 1;
+  padding: var(--espaco-2);
+  text-align: center;
+  font-size: var(--texto-p);
+  color: var(--cor-texto-suave);
+}
+
+/* modificador de elemento: item correspondente a tela atual */
+.nav__item--active {
+  color: var(--cor-acao);
+  font-weight: bold;
+}
+
+/* modificador: barra de abas fixa no rodape da tela */
+.nav--tabs {
+  position: sticky;
+  bottom: 0;
+  background-color: var(--cor-superficie);
+  border-top: var(--borda);
+}
+
+.nav--tabs .nav__item--active {
+  border-top: 2px solid var(--cor-acao);
+  padding-top: 6px;
+}
+
+/* modificador: navegacao do ambiente administrativo.        */
+/* No desktop o projeto original usa menu lateral; no mobile */
+/* a mesma navegacao quebra em linhas, de modo que a aba     */
+/* ativa esteja sempre visivel, sem rolagem horizontal.      */
+.nav--admin {
+  flex-wrap: wrap;
+  gap: var(--espaco-2);
+  padding: var(--espaco-3) var(--espaco-4);
+  background-color: var(--cor-superficie);
+  border-bottom: var(--borda);
+}
+
+.nav--admin .nav__item {
+  flex: 0 0 auto;
+  padding: var(--espaco-1) var(--espaco-3);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  white-space: nowrap;
+}
+
+.nav--admin .nav__item--active {
+  border-color: var(--cor-acao);
+  color: var(--cor-acao);
+}
+
+/* ---------- bloco: chip ---------- */
+/* Atalho curto para uma categoria de vagas.             */
+
+.chip-list {
+  display: flex;
+  gap: var(--espaco-2);
+  overflow-x: auto;
+  /* a rolagem existe, mas a barra cinza nao aparece */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.chip-list::-webkit-scrollbar {
+  display: none;
+}
+
+.chip {
+  flex: 0 0 auto;
+  padding: var(--espaco-1) var(--espaco-3);
+  border: 1px solid var(--cor-borda-forte);
+  border-radius: var(--raio);
+  font-size: var(--texto-p);
+  background-color: var(--cor-superficie);
+}
+
+/* modificador: categoria selecionada */
+.chip--active {
+  background-color: var(--cor-acao);
+  border-color: var(--cor-acao);
+  color: var(--cor-acao-texto);
+}
+
+/* modificador: chip usado apenas como rotulo (nao navega) */
+.chip--tag {
+  border-style: dashed;
+  color: var(--cor-texto-suave);
+}

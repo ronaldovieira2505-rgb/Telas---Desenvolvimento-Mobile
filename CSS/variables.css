@@ -1,0 +1,54 @@
+/* ===================================================== */
+/* variables.css                                         */
+/* Tokens de cor, espacamento e tipografia do projeto.    */
+/* Wireframe de baixa fidelidade: paleta neutra + uma     */
+/* unica cor de acao para destacar as acoes principais.   */
+/* ===================================================== */
+
+:root {
+  /* cores de superficie */
+  --cor-fundo: #f0f0f0;
+  --cor-superficie: #ffffff;
+  --cor-superficie-alt: #f7f7f7;
+
+  /* cores de borda */
+  --cor-borda: #d8d8d8;
+  --cor-borda-forte: #9e9e9e;
+
+  /* cores de texto */
+  --cor-texto: #212121;
+  --cor-texto-suave: #6e6e6e;
+
+  /* cor de acao (acoes principais) */
+  --cor-acao: #33506e;
+  --cor-acao-texto: #ffffff;
+
+  /* cor de perigo (acoes destrutivas: excluir, remover, */
+  /* bloquear, reprovar, cancelar)                       */
+  --cor-perigo: #a3342b;
+
+  /* placeholders de imagem */
+  --cor-placeholder: #dcdcdc;
+  --cor-placeholder-texto: #7a7a7a;
+
+  /* espacamentos */
+  --espaco-1: 4px;
+  --espaco-2: 8px;
+  --espaco-3: 12px;
+  --espaco-4: 16px;
+  --espaco-5: 24px;
+
+  /* tipografia */
+  --fonte-base: Arial, Helvetica, sans-serif;
+  --texto-p: 12px;
+  --texto-m: 14px;
+  --texto-g: 16px;
+  --texto-gg: 20px;
+
+  /* formas */
+  --raio: 4px;
+  --borda: 1px solid var(--cor-borda);
+
+  /* largura da tela mobile representada */
+  --largura-mobile: 390px;
+}
